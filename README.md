@@ -15,7 +15,7 @@ chmod +x run.sh && ./run.sh
 
 **Windows:**
 ```
-run.bat
+run-gui.bat
 ```
 
 **Or manually:**
