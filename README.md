@@ -1,7 +1,7 @@
 # TO-DO-GAME-java
 # 🎮 TODO Game – Gamified Task Manager
 
-A Java console application that turns your to-do list into an RPG.
+A gamified Java task manager that turns productivity into an RPG experience with XP, levels, streaks, rewards, an in-game store, and inventory system.
 
 ## Requirements
 - Java 17+ (any JDK)
@@ -35,6 +35,19 @@ java -cp out todogame.Main
 | Filtering | View all / pending / completed tasks |
 | Sorting | By priority or due date |
 | Persistence | Auto-save to `save/` directory on exit |
+| Store System | Buy cosmetic upgrades and rewards using earned currency |
+| Inventory System | Manage unlocked items, rewards, and collectibles |
+| Currency Economy | Earn coins through completed tasks and streaks |
+| Reward Progression | Unlock achievements and upgrades through gameplay |
+
+## Gameplay Loop
+
+1. Complete tasks
+2. Earn XP and coins
+3. Level up your character
+4. Maintain daily streaks
+5. Spend coins in the store
+6. Unlock and manage rewards in inventory
 
 ## XP Thresholds
 | Level | XP Required |
@@ -59,6 +72,9 @@ src/todogame/
 ├── GameSystem.java   – XP/level-up logic & display helpers
 ├── StorageManager.java – File persistence (tasks.dat, user.dat)
 └── Main.java         – Entry point & console UI
+├── Store.java        – Handles shop items and purchases
+├── Inventory.java    – Manages owned items and rewards
+├── CurrencySystem.java – Coin rewards and spending
 ```
 
 ---
@@ -91,6 +107,9 @@ java -cp out todogame.ui.GameUI
 - Double-click any task to complete it
 - Add / Edit / Delete via toolbar buttons
 - Auto-saves on window close
+- In-game reward store with purchasable items
+- Inventory system for unlocked rewards and collectibles
+- Currency earning system tied to task completion
 
 ### UI Classes (in `src/todogame/ui/`)
 | File | Role |
